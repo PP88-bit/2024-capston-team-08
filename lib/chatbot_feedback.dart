@@ -29,7 +29,7 @@ class ChatbotScreenState extends State<ChatbotScreen> {
     var url = Uri.parse(
         'https://api.openai.com/v1/chat/completions'); //플라스크 주소로 변경하면 플라스크에 응답이 감
     var apiKey =
-        'sk-proj-N185T7PswdK8IBsB68TgT3BlbkFJI1r2AyxvbqYwM2HFIQHs'; // 본인의 API 키로 변경하세요
+        ''; // 본인의 API 키로 변경하세요
     var headers = {
       'Content-Type': 'application/json; charset=utf-8',
       'Authorization': 'Bearer $apiKey',
