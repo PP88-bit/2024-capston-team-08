@@ -31,7 +31,19 @@ dependencies:
   flutter:
     sdk: flutter
   http: ^1.2.1
+  file_picker: ^4.2.7
+  just_audio: ^0.9.6
+  path_provider: ^2.0.7
+  intl: ^0.17.0
+
   cupertino_icons: ^1.0.6
+  carousel_slider: ^4.0.0
+
+  firebase_core: ^2.25.4
+  cloud_functions: ^4.6.0
+  firebase_auth: ^4.17.5
+  google_sign_in: ^6.2.0
+  cloud_firestore: ^4.7.0
 
 dev_dependencies:
   flutter_test:
@@ -51,7 +63,12 @@ dev_dependencies:
 flutter:
   assets:
     - assets/logo.png
-
+    - assets/piano.png
+    - assets/bass.png
+    - assets/guitar.png
+    - assets/drum.png
+    - assets/gear_icon.png
+    - assets/band.png
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.

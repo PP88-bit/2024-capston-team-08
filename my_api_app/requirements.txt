@@ -1,0 +1,4 @@
+Flask
+flask_migrate
+flask_bcrypt
+requests
