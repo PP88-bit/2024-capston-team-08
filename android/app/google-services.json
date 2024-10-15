@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "836592645166",
+    "project_id": "jamband-login-237af",
+    "storage_bucket": "jamband-login-237af.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:836592645166:android:0c2ee3102d4640e2025bbf",
+        "android_client_info": {
+          "package_name": "com.example.toonflix"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "836592645166-a4f9m5k5uc3eakcoa65iqeg5pckk6iks.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSq7UvkJO38FpJmTYPIxC7gnyamz5XF8Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "836592645166-a4f9m5k5uc3eakcoa65iqeg5pckk6iks.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
