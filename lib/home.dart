@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'song_selection.dart';
 import 'chatbot_feedback.dart';
-import 'settings.dart'; // settings.dart 파일 import
+import 'settings.dart';
 
 class HomeScreen extends StatefulWidget {
-  final String userId; // userId를 String으로 선언
+  final String userId;
 
   const HomeScreen({super.key, required this.userId});
 
@@ -16,9 +16,9 @@ class HomeScreenState extends State<HomeScreen> {
   int _selectedIndex = 0;
 
   final List<Widget> _widgetOptions = <Widget>[
-    const HomeContent(), // 홈 화면 내용
-    const SongSelectionScreen(), // 연습 화면 내용
-    const ChatbotScreen(), // 피드백 화면 내용
+    const HomeContent(),
+    const SongSelectionScreen(),
+    const ChatbotScreen(),
   ];
 
   void _onItemTapped(int index) {
@@ -30,42 +30,40 @@ class HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white, // 배경을 하얀색으로 설정
       appBar: _selectedIndex == 0
           ? AppBar(
               title: const Text('홈', style: TextStyle(color: Colors.black)),
               backgroundColor: Colors.white,
-              elevation: 0, // 그림자 제거
+              elevation: 0,
               actions: [
                 IconButton(
-                  icon:
-                      const Icon(Icons.settings, color: Colors.black), // 설정 아이콘
+                  icon: const Icon(Icons.settings, color: Colors.black),
                   onPressed: () {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
                         builder: (context) =>
-                            SettingsPage(userId: widget.userId), // userId 전달
+                            SettingsPage(userId: widget.userId),
                       ),
                     );
                   },
                 ),
               ],
             )
-          : null, // 선택된 탭이 홈이 아니면 AppBar를 null로 설정
+          : null,
       body: Center(
-        child: _widgetOptions.elementAt(_selectedIndex), // 선택된 페이지 표시
+        child: _widgetOptions.elementAt(_selectedIndex),
       ),
       bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: const Color.fromRGBO(252, 252, 252, 1),
+        backgroundColor: Colors.white,
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
             label: '홈',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.fitness_center),
-            label: '연습',
+            icon: Icon(Icons.file_present),
+            label: '파일 변환',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.chat),
@@ -73,8 +71,11 @@ class HomeScreenState extends State<HomeScreen> {
           ),
         ],
         currentIndex: _selectedIndex,
-        selectedItemColor: Colors.green, // 선택된 아이템 색상
+        selectedItemColor: Colors.green,
+        unselectedItemColor: Colors.black,
         onTap: _onItemTapped,
+        type: BottomNavigationBarType.fixed,
+        elevation: 0,
       ),
     );
   }
@@ -89,7 +90,7 @@ class HomeContent extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Image.asset(
-          'assets/piano.png', // 피아노 이미지
+          'assets/piano.png',
           height: 300,
         ),
       ],
