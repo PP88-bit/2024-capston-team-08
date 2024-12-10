@@ -23,6 +23,10 @@ class MyApp extends StatelessWidget {
       title: '잼밴드',
       theme: ThemeData(
         primarySwatch: Colors.green,
+        scaffoldBackgroundColor: Colors.white, // 전체 배경색 흰색
+        bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+          backgroundColor: Colors.white, // 네비게이션 바 배경 흰색
+        ),
       ),
       home: const SplashScreen(), // SplashScreen을 앱의 첫 화면으로 설정
     );
