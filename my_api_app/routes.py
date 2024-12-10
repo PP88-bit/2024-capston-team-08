@@ -9,10 +9,10 @@ def chat():
     message = data.get('message')
 
     # OpenAI API와 통신하는 코드
-    openai_url = ""
+    openai_url = "https://api.openai.com/v1/chat/completions"
     headers = {
         "Content-Type": "application/json",
-        "Authorization": "-"
+        "Authorization": "Bearer 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"
     }
     payload = {
         "model": "gpt-3.5-turbo",
