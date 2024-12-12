@@ -6,7 +6,7 @@ Basic Pitch https://github.com/spotify/basic-pitch
 ## 컴퓨터에서 실행할 경우
 app.py를 먼저 실행하고, lib\main.dart를 실행한다.
 
-## 모바일 앱으로 실행하는 경우
+## 모바일 앱으로 실행하는 경우(Android Only)
 apk 파일을 다운로드한 후 실행한다.
 
 # How to Install 
