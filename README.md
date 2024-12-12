@@ -26,11 +26,18 @@ Python, ffmpeg를 환경 변수에 추가한다.
 
 cmd를 켜 다음 코드를 입력한다. 
 
-pip install demucs
+```
+pip install demucs #Demuccs 설치
 
-pip install pasic-pitch
+pip install pasic-pitch #Basic Pitch 설치
 
-이후, app.py의 MODEL_PATH를 basic pitch의 폴더 내에 있는 nmp.onnx의 경로로 수정한다.
+pip install pytorch #pytorch 설치
+```
+
+이후, app.py의 13번째 줄에 있는 MODEL_PATH를 basic pitch의 폴더 내에 있는 nmp.onnx의 경로로 수정한다.
+```
+MODEL_PATH = r'your_path\nmp.onnx' #디렉토리 내의 경로로 수정
+```
 
 <br><br>
 
