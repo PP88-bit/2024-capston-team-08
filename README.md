@@ -35,8 +35,8 @@ pip install pasic-pitch #Basic Pitch 설치
 pip install pytorch #pytorch 설치
 ```
 
-이후, app.py의 13번째 줄에 있는 MODEL_PATH를 basic pitch의 폴더 내에 있는 nmp.onnx의 경로로 수정하고,
-chatbotfeedback.dart의 api 링크를 유효한 것으로 수정한다.
+이후, app.py의 13번째 줄에 있는 MODEL_PATH를 basic pitch의 폴더 내에 있는 nmp.onnx의 경로로 수정하고,<br>
+lib\chatbot_feedback.dart의 api 링크를 유효한 것으로 수정한다.
 ```
 MODEL_PATH = r'your_path\nmp.onnx' #디렉토리 내의 경로로 수정
 ```
